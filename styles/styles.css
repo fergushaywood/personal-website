@@ -1,0 +1,411 @@
+html {
+height: 100%;
+}
+
+body {
+font-family: aktiv-grotesk, helvetica, sans-serif;
+min-height: 100%;
+position: relative;
+font-size: 18px;
+margin: 0px;
+}
+
+
+/*Universal Type Styles */
+h2 {
+    font-size: 26px;
+    margin: 0px;
+    font-weight: 300;
+}
+ h4 {
+     margin: 0px;
+     font-weight: 300;
+ }
+ h1 {
+     margin: 0px;
+     font-size: 54px;
+     font-weight: 200;
+ }
+ .coming-soon {
+     display: inline-block;
+     position: absolute;
+     font-size: 26px;
+     padding-top: 10px;
+ }
+ p {
+     margin: 0px;
+ }
+
+.h1-link {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+.h1-link:hover {
+    font-style: italic;
+}
+.nav-item {
+    cursor: pointer;
+}
+.nav-item:hover {
+    font-style: italic; 
+}
+
+#current-link {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-skills {
+    border: 1px solid black;
+    padding: 0px 10px 3px 10px;
+    margin: 15px 0px;
+    border-radius: 20px;
+}
+/* Navigation Styles */
+header {
+    z-index: 1000;
+
+}
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.navigation {
+    margin-top: 18px;
+    margin-left: 32px;
+    z-index: 10000;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.name-title {
+    padding-bottom: 14px;
+}
+li h4{
+   padding-bottom: 3px;
+   margin: 0px;
+}
+.announcement-bar-wrapper {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    margin-left: 40.5%;
+    margin-top: 18px;
+    width: 300px;
+    height: 32px;
+}
+.announcement-bar {
+    border: 1px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    white-space: nowrap;
+    background-color: white;
+}
+/* Marquee */
+
+.marquee-announcement {
+
+ /* Starting position */
+ -moz-transform:translateX(150%);
+ -webkit-transform:translateX(150%);    
+ transform:translateX(150%);
+ /* Apply animation to this element */  
+ -moz-animation: announcement-bar 5s linear infinite;
+ -webkit-animation: announcement-bar 5s linear infinite;
+ animation: announcement-bar 5s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes announcement-bar {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-150%); }
+}
+@-webkit-keyframes announcement-bar {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-150%); }
+}
+@keyframes announcement-bar {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);       
+ }
+ 100%    { 
+ -moz-transform: translateX(-150%); /* Firefox bug fix */
+ -webkit-transform: translateX(-150%); /* Firefox bug fix */
+ transform: translateX(-150%); 
+ }
+}
+.directory-container {
+    height: 100%;
+    margin: 64px 32px;
+    display: flex;
+    flex-direction: column;
+
+}
+.directory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.directory-image-containter {
+    width: 60%;
+    overflow: hidden;
+    height: auto;   
+    border: 1px solid red;
+}
+.directory-image-containter img {
+    width: 100%;
+}
+
+.breadcrumbs {  
+    position: absolute;
+    display: inline-block;
+} 
+.breadcrumbs p{
+cursor: pointer;
+}
+
+.more-detail {
+    margin-top: 10px;
+    width: 168px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.more-detail:hover {
+    font-style: italic;
+}
+.more-detail-btn {
+    padding-top: 10px;
+    width: 55px;
+    padding-left: 8px;
+    padding-bottom: 6px;
+}
+
+.project-directory-index {
+    width: 28%;
+}
+.project-description-index {
+    margin-top: 54px;
+}
+.project-skills-tags {
+    margin-top: 10px;
+}
+
+.content-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    width: 80%;
+    max-width: 860px;
+    height: auto;
+}
+main {
+    z-index: 1000;
+    height: auto;
+    flex: 1;
+    position: relative;
+}
+
+.test {
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 6px;
+}
+.footer-nav {
+
+
+    display: flex;
+    flex-direction: row;
+}
+.footer-nav-menu {
+    margin-left: 32px;
+
+    width: 129px;
+}
+.footer-location {
+    position: absolute;
+    margin-left: 40.5%;
+}
+.footer-location h4{
+    padding-bottom: 5px;
+}
+/*background images*/
+.image-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+/*Ecommerce Images */
+#ecommerce-images {
+    visibility: hidden;
+}
+#ecomm-1 {
+    position: absolute;
+    float: left;
+    left: 23%;
+    top: 5%;
+}
+#ecomm-2 {
+    position: absolute;
+    float: left;
+    left: 8%;
+    top: 50%;
+}
+#ecomm-3 {
+    position: absolute;
+    float: right;
+    right: 4%;
+    top: 10%;
+}
+#ecomm-4 {
+    position: absolute;
+    float: right;
+    right: 40%;
+    top: 60%;
+}
+#ecomm-5 {
+    position: absolute;
+    float: right;
+    right: 6%;
+    top: 60%;
+}
+
+/* marketing-images*/
+#marketing-images {
+    visibility: hidden ;
+}
+
+#marketing-1 {
+    position: absolute;
+    float: right;
+    right: 23%;
+    top: 5%;
+}
+#marketing-2 {
+    position: absolute;
+    float: right;
+    right: 8%;
+    top: 50%;
+}
+#marketing-3 {
+    position: absolute;
+    float: left;
+    left: 10%;
+    top: 55%;
+}
+#marketing-4 {
+    position: absolute;
+    float: left;
+    left: 4%;
+    top: 10%;
+}
+#design-images {
+    visibility: hidden;
+}
+
+#design-1 {
+    position: absolute;
+    float: right;
+    right: 30%;
+    top: 9%;
+}
+#design-2 {
+    position: absolute;
+    float: right;
+    right: 8%;
+    top: 60%;
+}
+#design-3 {
+    position: absolute;
+    float: left;
+    left: 10%;
+    top: 50%;
+}
+#design-4 {
+    position: absolute;
+    float: left;
+    left: 4%;
+    top: 10%;
+}
+
+#design-5 {
+    position: absolute;
+    float: right;
+    right: 5%;
+    top: 10%;
+}
+
+#photography-images {
+    visibility: hidden ;
+}
+
+#photography-1 {
+    position: absolute;
+    float: right;
+    right: 30%;
+    top: 9%;
+}
+#photography-2 {
+    position: absolute;
+    float: right;
+    right: 8%;
+    top: 60%;
+}
+#photography-3 {
+    position: absolute;
+    float: left;
+    left: 40%;
+    top: 35%;
+}
+#photography-4 {
+    position: absolute;
+    float: left;
+    left: 4%;
+    top: 2%;
+}
+
+#photography-5 {
+    position: absolute;
+    float: left;
+    right: 5%;
+    top: 10%;
+}
+#photography-6 {
+    position: absolute;
+    float: right;
+    left: 10%;
+    top: 50%;
+}
