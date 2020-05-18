@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href='project-directory.html'><p class='nav-item' id='current-link'>Projects</p></a></li>
                     <li><a href='experience.html'><p class='nav-item'>Experience</p></a></li>
-                    <li><a href='project-directory.html'><p class='nav-item'>Contact</p></a></li>
+                    <li><a href='contact.html'><p class='nav-item'>Contact</p></a></li>
                 </ul>
                 </div>
                 <div class='announcement-bar-wrapper'>
@@ -89,17 +89,17 @@
                                     <img src='../assets/images/photography-3.jpeg'>
                                     </div>
                                 </div>
+            <button class='back-to-top-btn' onclick="topFunction()" id="myBtn" title="Back to Top"><img src='../assets/more-detail-arrow.svg'></button>
          </div>
         </div>
          </main>
-        <footer>
+         <footer>
             <div class='footer-nav'>
                 <ul class='footer-nav-menu'>
-                    <li class='nav-item'><h4>Instagram</h4></li>
-                    <li class='nav-item'><h4>Twitter</h4></li>
-                    <li class='nav-item'><h4>LinkedIn</h4></li>
+                    <li class='nav-item'><h4><a href='http://instagram.com/fergushaywood/' target='_blank'>Instagram</a></h4></li>
+                    <li class='nav-item'><a href='http://twitter.com/fergushaywood/' target='_blank'><h4>Twitter</h4></a></li>
+                    <li class='nav-item'><a href='https://www.linkedin.com/in/fergus-haywood-b912a8139/' target='_blank'><h4>LinkedIn</h4></a></li>
                 </ul>
-            
                 <div class='footer-location'>
                     <h4>Currently:</h4>
                     <h4>LONDON</h4>
@@ -113,10 +113,11 @@
 <!--Display Live Time Update-->
 <script>
     (function update_time(){ 
-    var now = moment().format('h:mm:ss a');
+    var now = moment().utc('Europe/London').format('h:mm:ss a');
     $('.time-container').text(now);
     setTimeout(update_time, 1000);
 })();
 </script>
+<script src='../js/back-to-top.js'></script>
     </body>
 </html>
