@@ -1,15 +1,14 @@
 html {
-height: 100%;
+    height: 100%;
 }
 
 body {
-font-family: aktiv-grotesk, helvetica, sans-serif;
-min-height: 100%;
-position: relative;
-font-size: 18px;
-margin: 0px;
+    font-family: aktiv-grotesk, helvetica, sans-serif;
+    min-height: 100%;
+    position: relative;
+    font-size: 18px;
+    margin: 0px;
 }
-
 
 /*Universal Type Styles */
 h2 {
@@ -17,11 +16,11 @@ h2 {
     margin: 0px;
     font-weight: 300;
 }
- h4 {
+h4 {
      margin: 0px;
      font-weight: 300;
- }
- h1 {
+}
+h1 {
      margin: 0px;
      font-size: 54px;
      font-weight: 200;
@@ -263,6 +262,11 @@ main {
     width: 30%;
 }
 
+#email {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .right-container {
     display: flex;
     flex-direction: row;
@@ -275,10 +279,39 @@ main {
     padding-top: 62px;
     padding-left: 32px;
 }
-.test {
-    height: auto;
+input{
+    width: 100%;
+    height: 24px;
+    border: 1px solid black;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
+textarea {
+    width: 100%;
+    height: 72px;
+    border: 1px solid black;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+button:hover {
+    font-style: italic;
+}
+
+button {
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    cursor: pointer;
+}
+
+button img {
+    width: 35px;
+}
+
+/* Footer */
 footer {
     position: absolute;
     width: 100%;
@@ -349,7 +382,6 @@ footer {
 #marketing-images {
     visibility: hidden ;
 }
-
 #marketing-1 {
     position: absolute;
     float: right;
