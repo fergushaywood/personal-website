@@ -1,9 +1,7 @@
-let date = new Date(); 
-let now_utc = 'LONDON' +  Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(),
- date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-
- return new Date(now_utc);
-
-const dateDisplay = document.body.innerHTML;
-
-dateDisplay = '<h4>' + now_utc + '</h4>';
+$(document).ready(function() {
+(function update_time() {
+    var now = moment().utc('Europe/London').format('h:mm:ss a');
+    $('.time-container').text(now);
+    setTimeout(update_time, 1000);
+})
+});
